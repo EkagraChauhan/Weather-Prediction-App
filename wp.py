@@ -1,12 +1,6 @@
 import streamlit as st
 import pickle
 
-from flask import Flask
-app = Flask(__name__)
-
-@app.route("/")
-def home():
-    return "Weather App Running ✅"
 
 st.title("Weather Prediction App")
 pn=st.number_input("enter precipitaion")
